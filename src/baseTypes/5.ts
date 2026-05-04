@@ -1,2 +1,3 @@
-let value: string | number = 'hello';
-let status: 'enable' | 'disable' = 'enable';
+let union: string | number;
+let literal: 'enable' | 'disable';
+export {};
