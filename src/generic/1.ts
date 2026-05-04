@@ -1,5 +1,10 @@
 function getPromise(): Promise<(string | number)[]> {
-  return new Promise((resolve) => {
+  return new Promise<(string | number)[]>((resolve) => {
     resolve(['Text', 50]);
   });
 }
+getPromise()
+.then((data) => {
+  console.log(data);
+});
+export {};
